@@ -20,6 +20,7 @@ return require('packer').startup(function(use)
 	use('nvim-treesitter/playground')
 	use('mbbill/undotree')
 	use('tpope/vim-fugitive')
+	use('nvim-tree/nvim-web-devicons')
 	use {
 		'VonHeikemen/lsp-zero.nvim',
 		requires = {
@@ -43,7 +44,7 @@ return require('packer').startup(function(use)
 	}
 	use {
 		'nvim-lualine/lualine.nvim',
-		requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+		requires = { 'nvim-tree/nvim-web-devicons', opt = true }
 	}
-
+	use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
 end)
