@@ -185,10 +185,20 @@ _G.packer_plugins = {
     path = "/Users/genesistadeo/.local/share/nvim/site/pack/packer/start/undotree",
     url = "https://github.com/mbbill/undotree"
   },
+  ["vim-endwise"] = {
+    loaded = true,
+    path = "/Users/genesistadeo/.local/share/nvim/site/pack/packer/start/vim-endwise",
+    url = "https://github.com/tpope/vim-endwise"
+  },
   ["vim-fugitive"] = {
     loaded = true,
     path = "/Users/genesistadeo/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
+  },
+  ["vim-rails"] = {
+    loaded = true,
+    path = "/Users/genesistadeo/.local/share/nvim/site/pack/packer/start/vim-rails",
+    url = "https://github.com/tpope/vim-rails"
   }
 }
 

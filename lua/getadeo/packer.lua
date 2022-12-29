@@ -16,7 +16,7 @@ return require('packer').startup(function(use)
 		end
 	})
 
-	use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
+	use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdateSync'})
 	use('nvim-treesitter/playground')
 	use('mbbill/undotree')
 	use('tpope/vim-fugitive')
@@ -47,4 +47,6 @@ return require('packer').startup(function(use)
 		requires = { 'nvim-tree/nvim-web-devicons', opt = true }
 	}
 	use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
+    use {'tpope/vim-rails'}
+    use {'tpope/vim-endwise'}
 end)
