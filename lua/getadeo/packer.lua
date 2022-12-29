@@ -49,4 +49,10 @@ return require('packer').startup(function(use)
 	use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
     use {'tpope/vim-rails'}
     use {'tpope/vim-endwise'}
+    use {
+    'numToStr/Comment.nvim',
+    config = function()
+        require('Comment').setup()
+    end
+    }
 end)
