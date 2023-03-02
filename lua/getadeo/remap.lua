@@ -24,3 +24,7 @@ vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 -- cargo commands
 vim.keymap.set("n", "<leader>cr", "<cmd>!cargo run<CR>")
 vim.keymap.set("n", "<leader>cc", "<cmd>!cargo clippy<CR>")
+
+-- Easy Align remap
+vim.keymap.set("v", "t,", "<cmd>EasyAlign ,<CR>")
+vim.keymap.set("v", "t=", "<cmd>EasyAlign =<CR>")

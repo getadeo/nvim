@@ -4,6 +4,7 @@ lsp.preset('recommended')
 lsp.ensure_installed({
 	'rust_analyzer',
 	'sumneko_lua',
+	'tsserver',
 })
 
 lsp.configure('sumneko_lua', {
@@ -14,6 +15,17 @@ lsp.configure('sumneko_lua', {
             }
         }
     }
+})
+
+lsp.configure('tsserver', {
+  on_attach = function(client, bufnr)
+    print('hello tsserver')
+  end,
+  settings = {
+    completions = {
+      completeFunctionCalls = true
+    }
+  }
 })
 
 lsp.set_preferences({

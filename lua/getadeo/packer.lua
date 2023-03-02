@@ -20,6 +20,7 @@ return require('packer').startup(function(use)
 	use('nvim-treesitter/playground')
 	use('mbbill/undotree')
 	use('tpope/vim-fugitive')
+	use('tpope/vim-rhubarb')
 	use('nvim-tree/nvim-web-devicons')
 	use {
 		'VonHeikemen/lsp-zero.nvim',
@@ -54,5 +55,10 @@ return require('packer').startup(function(use)
     config = function()
         require('Comment').setup()
     end
+    }
+    use { 'junegunn/vim-easy-align' }
+    use {
+	    'lewis6991/gitsigns.nvim',
+	     tag = 'release'
     }
 end)
