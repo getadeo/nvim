@@ -6,7 +6,7 @@ lsp.ensure_installed({
 	'tsserver',
 })
 
-lsp.configure('lua-ls', {
+lsp.configure('lua_ls', {
     settings = {
         Lua = {
             diagnostics = {
