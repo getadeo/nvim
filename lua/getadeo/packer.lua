@@ -3,7 +3,7 @@ vim.cmd.packadd('packer.nvim')
 return require('packer').startup(function(use)
 	use 'wbthomason/packer.nvim'
 	use {
-		'nvim-telescope/telescope.nvim', tag = '0.1.0',
+		'nvim-telescope/telescope.nvim', tag = '0.1.4',
 		requires = { {'nvim-lua/plenary.nvim'} }
 	}
 
@@ -59,7 +59,6 @@ return require('packer').startup(function(use)
     use {
 	    'lewis6991/gitsigns.nvim',
     }
-    use { 'ggandor/leap.nvim' }
     use {
       "folke/trouble.nvim",
       requires = "nvim-tree/nvim-web-devicons",
@@ -70,5 +69,8 @@ return require('packer').startup(function(use)
         -- refer to the configuration section below
       }
     end
+    }
+    use {
+	    "lukas-reineke/indent-blankline.nvim",
     }
 end)
