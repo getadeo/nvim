@@ -63,4 +63,5 @@ return require('packer').startup(function(use)
     }
     use { "lukas-reineke/indent-blankline.nvim" }
     use { "catppuccin/nvim", as = "catppuccin" }
+    use { "github/copilot.vim" }
 end)

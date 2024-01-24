@@ -7,4 +7,4 @@ vim.opt.clipboard = "unnamedplus"
 
 vim.opt.mouse = nil
 
-vim.cmd.colorscheme "catppuccin-mocha"
+vim.cmd.colorscheme "catppuccin-frappe"
