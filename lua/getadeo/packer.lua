@@ -62,6 +62,12 @@ return require('packer').startup(function(use)
     end
     }
     use { "lukas-reineke/indent-blankline.nvim" }
-    use { "catppuccin/nvim", as = "catppuccin" }
+    use { 'embark-theme/vim', as = 'embark' }
     use { "github/copilot.vim" }
+    use({
+      "stevearc/oil.nvim",
+      config = function()
+        require("oil").setup()
+      end,
+    })
 end)

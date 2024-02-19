@@ -3,13 +3,15 @@ local lsp = require("lsp-zero")
 lsp.preset("recommended")
 
 lsp.ensure_installed({
+  'html',
+  'cssls',
   'tsserver',
-  'rust_analyzer',
+  'solargraph',
+  'eslint',
+  'lua_ls',
 })
 
--- Fix Undefined global 'vim'
 lsp.nvim_workspace()
-
 
 local cmp = require('cmp')
 local cmp_select = {behavior = cmp.SelectBehavior.Select}

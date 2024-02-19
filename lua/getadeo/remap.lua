@@ -28,3 +28,6 @@ vim.keymap.set("n", "<leader>cc", "<cmd>!cargo clippy<CR>")
 -- Easy Align remap
 vim.keymap.set("v", "t,", "<cmd>EasyAlign ,<CR>")
 vim.keymap.set("v", "t=", "<cmd>EasyAlign =<CR>")
+
+-- Oil remap
+vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
