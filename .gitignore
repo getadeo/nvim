@@ -7,3 +7,4 @@ foo.*
 *.log
 data
 127.0.0.1
+.DS_Store

@@ -24,4 +24,6 @@ keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
 -- Yank current path
-keymap.set('n', "<leader>yp", [[<Cmd>let @+=expand('%:p')<CR>]], { desc = "Yank current path" })
+keymap.set('n', "<leader>yp", [[<Cmd>let @+=expand('%:p:.')<CR>]], { desc = "Yank current path" })
+
+keymap.set("n", "<leader>zm", "<cmd>ZenMode<CR>", { desc = "Toggle Zen Mode" })

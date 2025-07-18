@@ -4,7 +4,6 @@ return {
   priority = 1000,
   config = function()
     require("catppuccin").setup({
-      -- Recommended - see "Configuring" below for more config options
       transparent = true,
       italic_comments = true,
       hide_fillchars = true,
@@ -38,6 +37,7 @@ return {
         },
       },
     })
-    vim.cmd("colorscheme catppuccin-mocha") -- set the colorscheme
+
+    vim.cmd("colorscheme catppuccin-frappe") -- set the colorscheme
   end,
 }

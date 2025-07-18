@@ -78,6 +78,7 @@ return {
       "rust",
       "elixir",
       "eex",
+      "php"
     },
     incremental_selection = {
       enable = true,
